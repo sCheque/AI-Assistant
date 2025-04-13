@@ -18,7 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ru" 
-    className="light">
+    className="light"
+    style={{ colorScheme: "light" }}
+    >
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           {children}
