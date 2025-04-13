@@ -2,7 +2,7 @@ import type { NextRequest } from "next/server"
 
 // Определяем идентификаторы моделей с правильными идентификаторами OpenRouter
 const MODEL_MAP = {
-  mistral: "mistralai/mistral-7b-instruct", // Используем Mistral
+  mistral: "mistralai/mistral-small-3.1-24b-instruct:free", // Используем Mistral
   "base-free": "01-ai/yi-34b-chat",
 }
 
