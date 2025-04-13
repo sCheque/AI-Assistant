@@ -324,9 +324,9 @@ export default function ChatPage() {
                           //className="prose dark:prose-invert prose-sm sm:prose-base max-w-none"
                           remarkPlugins={[remarkGfm]}
                           components={{
-                            code({ node, inline, className, children, ...props }) {
+                            code({ node, className, children, ...props }) {
                               const match = /language-(\w+)/.exec(className || "")
-                              return !inline && match ? (
+                              return match ? (
                                 <div className="relative my-4 rounded-md overflow-hidden">
                                   <div className="flex items-center justify-between bg-gray-800 text-gray-200 px-4 py-1 text-xs">
                                     <span>{match[1]}</span>
