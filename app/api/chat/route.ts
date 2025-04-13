@@ -41,8 +41,7 @@ export const maxDuration = 60
 // Добавляем неблокирующий вариант для случаев, когда потоковая передача не работает
 export async function POST(req: NextRequest) {
   try {
-    // Используем жестко закодированный API ключ
-    const apiKey = "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"
+    const apiKey = process.env.API_KEY || "";
 
     console.log("Длина API ключа:", apiKey.length)
 

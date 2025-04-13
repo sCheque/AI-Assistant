@@ -184,7 +184,7 @@ export default function ChatPage() {
       } catch (fetchError) {
         console.error("Ошибка запроса:", fetchError)
 
-        if (fetchError.name === "AbortError") {
+        if ((fetchError as Error).name === "AbortError") {
           throw new Error("Время ожидания истекло. Пожалуйста, попробуйте снова.")
         }
 
