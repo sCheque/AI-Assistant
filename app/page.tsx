@@ -339,6 +339,7 @@ export default function ChatPage() {
                                       Копировать
                                     </button>
                                   </div>
+                                  {/* @ts-ignore */}
                                   <pre
                                     {...props}
                                     className="p-4 bg-gray-900 text-gray-100 overflow-x-auto text-xs sm:text-sm"
